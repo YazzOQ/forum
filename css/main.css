@@ -27,7 +27,8 @@ html, body {
 
 }
 .os-logo img {
-    height: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .logo-small {

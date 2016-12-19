@@ -4,20 +4,120 @@
    Author's custom styles
    ========================================================================== */
 
-html {
-    background-color: #4A90E2;
+html, body {
+    height: 100%;
+    /*background-color: #4A90E2;*/
+}
+
+
+@media (min-width: 992px){
+    .os-contain-everything {
+        width: 992px;
+        height: 500px;
+          margin: auto;
+          position: absolute;
+          top: 0; left: 0; bottom: 0; right: 0;
+    }
 }
 
 .os-logo{
     text-align:center;
 
+
+}
+.os-logo img {
+    height: 400px;
+}
+
+.logo-small {
+    padding-top: 15px;
+}
+
+.logo-small img {
+    height: 70px !important;
+}
+
+
+@media (min-width: 992px) {
+    .logos {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .logos {
+        position: relative;
+        padding: 10px 0;
+    }
+}
+
+.logos {
+    background-color: #C9C9C9;
+}
+
+.logos img {
+    height: 100px;
+}
+
+.logos .col-md-3 {
+    text-align: center;
 }
 
 footer {
     background-color: blue;
 }
 
+.text {
+    font-size: 2em;
+}
 
+@media (max-width: 992px) {
+    .text {
+        text-align: center;
+    }
+
+    #Stage_jbeeb_3 {
+        margin: 0 auto !important;
+    }
+
+    .more-info {
+        text-align: center;
+        padding-bottom: 1em;
+    }
+
+    .logos img {
+        margin: 1em 0;
+    }
+
+}
+
+.text h1 {
+    color: #4A90E2;
+}
+
+
+
+#os-timer {
+    margin-top: 4em;
+}
+
+.absolute-center {
+    padding-top: 1.5em;
+}
+
+/*@media (min-width: 992px){
+    .absolute-center {
+        padding-top: 3.5em;
+    }
+}*/
+
+.more-info {
+    color: #AAAAAA;
+    margin-top: 2em;
+    font-size: 1.5em;
+}
 
 
 

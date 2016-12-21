@@ -20,67 +20,93 @@
 
     </head>
     <body>
-    <div class="os-contain-everything">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="os-logo">
-                        <img src="images/logo.svg">
+    <div id="main" class="os-tab active">
+        <div class="os-contain-everything">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="os-logo">
+                            <img src="images/logo.svg">
+                        </div>
+                        
                     </div>
-                    
+                    <div class="col-md-6">
+                        <div class="absolute-center">
+                            <div class="text">
+                              <h1>FORUM Offene Stadt</h1>
+                              <hr>
+                                <h3> 03.03.2017 | 10 - 19 Uhr </h3>
+                                <p> KörberForum | Hamburg </p>
+                            </div>
+                            <div id="os-timer">
+                                <script>
+                                   var myCountdown1 = new Countdown({
+                                        year    : 2017,
+                                        month   : 3,
+                                        day     : 3,
+                                        hour    : 10, 
+                                        rangeHi : "month"});
+                                </script>
+                            </div>
+                            <div class="more-info">
+                                <p>Bald gibt es hier noch mehr Infos...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="absolute-center">
-                        <div class="text">
-                          <h1>FORUM Offene Stadt</h1>
-                          <hr>
-                            <h3> 03.03.2017 | 10 - 19 Uhr </h3>
-                            <p> KörberForum | Hamburg </p>
-                        </div>
-                        <div id="os-timer">
-                            <script>
-                               var myCountdown1 = new Countdown({
-                                    year    : 2017,
-                                    month   : 3,
-                                    day     : 3,
-                                    hour    : 10, 
-                                    rangeHi : "month"});
-                            </script>
-                        </div>
-                        <div class="more-info">
-                            <p>Bald gibt es hier noch mehr Infos...</p>
-                        </div>
+            </div>
+            <a href="#" id="impressumlink">Impressum</a>
+        </div>
+        <div class="logos">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="http://codeforhamburg.org/">
+                            <img src="images/CodeForHamburg.svg">
+                        </a>
+                    </div>
+                    <div class="logo-small col-md-3">
+                        <a href="http://www.koerber-stiftung.de/">
+                            <img src="images/koerberstiftung.png">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="http://okfn.de">
+                            <img src="images/okf.svg">
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="http://we-build.city">
+                            <img src="images/webuildcity.svg">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="logos">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="http://codeforhamburg.org/">
-                        <img src="images/CodeForHamburg.svg">
-                    </a>
-                </div>
-                <div class="logo-small col-md-3">
-                    <a href="http://www.koerber-stiftung.de/">
-                        <img src="images/koerberstiftung.png">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="http://okfn.de">
-                        <img src="images/okf.svg">
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a href="http://we-build.city">
-                        <img src="images/webuildcity.svg">
-                    </a>
-                </div>
-            </div>
+    <div class="os-tab" id="impressum">
+        
+        <div>
+            <p>Code for Hamburg</p>
+            <p>Wincklerstr. 3</p>
+            <p>20459 Hamburg</p>
         </div>
+        
+        <a href="http://www.freepik.com/free-photos-vectors/city">City vector designed by Freepik</a>
+        <hr>
+        <a id="homelink" href="">Zurück</a>
+
     </div>
+    <script>
+        document.getElementById('impressumlink').addEventListener('click', function(){
+            document.getElementById('impressum').classList.add('active');
+            document.getElementById('main').classList.remove('active');
+        })
+        document.getElementById('homelink').addEventListener('click', function(){
+            document.getElementById('impressum').classList.remove('active');
+            document.getElementById('main').classList.add('active');
+        })
+    </script>
 
 
     </body>

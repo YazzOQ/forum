@@ -115,15 +115,31 @@ footer {
     }
 }*/
 
+@media(min-width:992px){
+    #impressumlink {
+        bottom: 0px;
+        right: 0px;
+        position: absolute;
+    }
+}
+
 .more-info {
     color: #AAAAAA;
     margin-top: 2em;
     font-size: 1.5em;
 }
 
+.os-tab {
+    display: none;
+}
 
+.os-tab.active {
+    display: block;
+}
 
-
+#impressum {
+    padding: 1em;
+}
 
 
 

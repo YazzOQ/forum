@@ -38,6 +38,7 @@ html, body {
     background-attachment: fixed;
     /*background-position: center;*/
     padding-bottom: 2em;
+    background-size: cover;
 }
 
 .os-logo{

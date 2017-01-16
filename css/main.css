@@ -4,10 +4,12 @@
    Author's custom styles
    ========================================================================== */
 
+
 html, body {
     height: 100%;
     /*background-color: #4A90E2;*/
     font-family: 'PT Sans', sans-serif ;
+
 }
 
 
@@ -23,6 +25,19 @@ html, body {
           margin: auto;
           
     }
+}
+@media (min-width: 992px) {
+    .os-logo {
+        padding-top: 5em;
+    }
+}
+
+#start {
+     background-image: url('../images/hintergrund.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*background-position: center;*/
+    padding-bottom: 2em;
 }
 
 .os-logo{
@@ -101,6 +116,13 @@ footer {
 
 .text h1 {
     color: #4A90E2;
+}
+
+h2 {
+
+    color: #4A90E2;
+    padding-top: 1em;
+
 }
 
 

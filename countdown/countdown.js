@@ -29,7 +29,7 @@ var CountdownLabels = {
 	minute 	: "MINUTEN",
 	hour	: "STUNDEN",
 	day 	: "TAGE",
-	month 	: "MONATE",
+	month 	: "MONAT",
 	year 	: "YEARS"	
 };
 
